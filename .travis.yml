@@ -51,5 +51,8 @@ deploy:
     api-key: "0b74de16d287f975b6abdfe59d5688f47423aada"
     skip_cleanup: true
     app-file: ./target/android/output/shadowsocksr-release.apk
+    keystore-file: travis.keystore
+    storepass: travis
+    alias: travis
     on:
        all_branches: true
