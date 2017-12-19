@@ -56,10 +56,11 @@ deploy:
 #    alias: travis
 #    on:
 #       all_branches: true
-  - provider: releases # 部署到GitHub Release，除此之外，Travis CI还支持发布到fir.im、AWS、Google App Engine等
-    api_key:           # 填写GitHub的token （Settings -> Personal access tokens -> Generate new token）
+
+  - provider: releases 
+    api_key:           
       secure: $GH_TOKEN
     file: ./target/android/output/shadowsocksr-release.apk
-    skip_cleanup: true     # 设置为true以跳过清理,不然apk文件就会被清理
-    on:     # 发布时机           
+    skip_cleanup: true     
+    on:     
       all_branches: true   
