@@ -62,4 +62,4 @@ deploy:
     file: ./target/android/output/shadowsocksr-release.apk
     skip_cleanup: true     # 设置为true以跳过清理,不然apk文件就会被清理
     on:     # 发布时机           
-      branch: t-scala   
+      all_branches: true   
