@@ -50,5 +50,4 @@ deploy:
     provider: testfairy
     api-key: "0b74de16d287f975b6abdfe59d5688f47423aada"
     app-file: shadowsocksr-release.apk
-    #all_branches: true
-    on: t-scala
+    all_branches: true
